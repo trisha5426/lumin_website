@@ -1,104 +1,290 @@
-import React from 'react';
-import { useState } from 'react';
+// import React from 'react';
+// import { useState } from 'react';
+// import axios from '../axios';
+// import { useNavigate } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+// import "../index.css"; 
+// import img from "../Assets/Images/newlogin.png";
+
+// function LoginPage() {
+//   const [loginData, setLoginData] = useState({
+//     email: '',
+//     password: '',
+//   });
+//   const [loading, setLoading] = useState(false);
+//   const [error, setError] = useState('');
+
+//   const handleChange = (e) => {
+//     const { name, value } = e.target;
+//     setLoginData({ ...loginData, [name]: value });
+//   };
+
+//   const navigate = useNavigate();
+
+//   const handleSubmit = async (e) => {
+//     e.preventDefault();
+//     setLoading(true);
+//     setError('');
+
+//     try {
+//       const response = await axios.post('/auth/login', loginData);
+//       // Assuming the backend sends back a JWT token on successful login
+//       localStorage.setItem('token', response.data.token);
+//       setTimeout(() => {
+//         navigate('/userprofilepage');
+//       }, 2000);
+//     } catch (error) {
+//       setError(error.response?.data?.message || 'Error logging in');
+//     } finally {
+//       setLoading(false);
+//     }
+//   };
+
+//   return (
+    
+//     <div className="login-card">
+//       <div className="login-left">
+//         <div className='login-img'>
+//         <img src={img} alt="login" />
+//          </div>  
+//       </div>
+
+
+//       <div className="login-right">
+//         <div className="login-form">
+//         <h1 className="title-login">LUMIN</h1>
+//         <form onSubmit={handleSubmit}>
+
+//           <div className="form-group">
+//             <label htmlFor="email"> Email</label>
+//             <input
+//               type="text"
+//               id="email"
+//               name="email" 
+//               value={loginData.email}
+//               onChange={handleChange}
+//               placeholder="Enter Email"
+//               className="form-control"
+//             />
+//           </div>
+//             <div className="form-group">
+//               <label htmlFor="password">Password</label>
+//                   <input
+//                   type="password"
+//                   id="password"
+//                   name="password"  
+//                   value={loginData.password}
+//                   onChange={handleChange}
+//                   placeholder="Password"
+//                   className="form-control"
+//                 />
+//             </div>
+//                 {/* <a href="#" className="forgot-password">
+//                 Forgot password?
+//                 </a> */}
+//               <button type="submit" className="btn"  disabled={loading}>
+//               {loading ? 'Logging in...' : 'Login'}
+//               </button>
+//             </form>
+//             {error && <div className="error-message">{error}</div>}
+//             <div className="register-link">
+//               <span>Don't have an account? </span>
+//               <Link to="/register" className="link-underline">
+//               Register here
+//             </Link>
+//             </div>
+//       </div>
+//     </div>
+//     </div>
+    
+//   );
+// }
+
+// export default LoginPage;
+
+import React, { useState } from 'react';
 import axios from '../axios';
-import { useNavigate } from 'react-router-dom';
-import { Link } from 'react-router-dom';
-import "../index.css"; 
+
+import { useNavigate, Link } from 'react-router-dom';
+
+import "../index.css";
+
 import img from "../Assets/Images/newlogin.png";
 
 function LoginPage() {
+
   const [loginData, setLoginData] = useState({
     email: '',
     password: '',
   });
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState('');
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setLoginData({ ...loginData, [name]: value });
-  };
+  const [loading, setLoading] = useState(false);
+
+  const [error, setError] = useState('');
 
   const navigate = useNavigate();
 
+  const handleChange = (e) => {
+
+    const { name, value } = e.target;
+
+    setLoginData({
+      ...loginData,
+      [name]: value,
+    });
+  };
+
   const handleSubmit = async (e) => {
+
     e.preventDefault();
+
     setLoading(true);
+
     setError('');
 
     try {
-      const response = await axios.post('/auth/login', loginData);
-      // Assuming the backend sends back a JWT token on successful login
-      localStorage.setItem('token', response.data.token);
-      setTimeout(() => {
-        navigate('/userprofilepage');
-      }, 2000);
+
+      const response = await axios.post(
+        '/auth/login',
+        loginData
+      );
+
+      console.log(response.data);
+
+      localStorage.setItem(
+        'token',
+        response.data.token
+      );
+
+      navigate('/userprofilepage');
+
     } catch (error) {
-      setError(error.response?.data?.message || 'Error logging in');
+
+      console.log(error);
+
+      setError(
+        error.response?.data?.message ||
+        'Login failed'
+      );
+
     } finally {
+
       setLoading(false);
     }
   };
 
   return (
-    
-    <div className="login-card">
-      <div className="login-left">
-        <div className='login-img'>
-        <img src={img} alt="login" />
-         </div>  
-      </div>
 
+    <div className="login-page">
 
-      <div className="login-right">
-        <div className="login-form">
-        <h1 className="title-login">LUMIN</h1>
-        <form onSubmit={handleSubmit}>
+      <div className="login-card">
 
-          <div className="form-group">
-            <label htmlFor="email"> Email</label>
-            <input
-              type="text"
-              id="email"
-              name="email" 
-              value={loginData.email}
-              onChange={handleChange}
-              placeholder="Enter Email"
-              className="form-control"
-            />
+        {/* LEFT SIDE */}
+
+        <div className="login-left">
+
+          <div className="login-img">
+
+            <img src={img} alt="login" />
+
           </div>
-            <div className="form-group">
-              <label htmlFor="password">Password</label>
-                  <input
+
+        </div>
+
+        {/* RIGHT SIDE */}
+
+        <div className="login-right">
+
+          <div className="login-form">
+
+            <h1 className="title-login">
+              LUMIN
+            </h1>
+
+            <p className="login-subtitle">
+              Welcome back! Continue your learning journey.
+            </p>
+
+            <form onSubmit={handleSubmit}>
+
+              <div className="form-group">
+
+                <label htmlFor="email">
+                  Email
+                </label>
+
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={loginData.email}
+                  onChange={handleChange}
+                  placeholder="Enter your email"
+                  className="form-control"
+                  required
+                />
+
+              </div>
+
+              <div className="form-group">
+
+                <label htmlFor="password">
+                  Password
+                </label>
+
+                <input
                   type="password"
                   id="password"
-                  name="password"  
+                  name="password"
                   value={loginData.password}
                   onChange={handleChange}
-                  placeholder="Password"
+                  placeholder="Enter your password"
                   className="form-control"
+                  required
                 />
-            </div>
-                {/* <a href="#" className="forgot-password">
-                Forgot password?
-                </a> */}
-              <button type="submit" className="btn"  disabled={loading}>
-              {loading ? 'Logging in...' : 'Login'}
+
+              </div>
+
+              <button
+                type="submit"
+                className="btn"
+                disabled={loading}
+              >
+
+                {loading
+                  ? "Logging in..."
+                  : "Login"}
+
               </button>
+
             </form>
-            {error && <div className="error-message">{error}</div>}
+
+            {error && (
+              <div className="error-message">
+                {error}
+              </div>
+            )}
+
             <div className="register-link">
-              <span>Don't have an account? </span>
-              <Link to="/register" className="link-underline">
-              Register here
-            </Link>
+
+              <span>
+                Don't have an account?
+              </span>
+
+              <Link to="/register">
+                Register here
+              </Link>
+
             </div>
+
+          </div>
+
+        </div>
+
       </div>
+
     </div>
-    </div>
-    
   );
 }
 
 export default LoginPage;
-

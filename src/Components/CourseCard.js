@@ -44,7 +44,7 @@ const CourseCard = ({
         <p className="orig-instructor-name">{instructorName}</p>
         <Link
           to={{ pathname: `/courses/${term}/${courseId}` }}
-          className="orig-visit-btn"
+          className="cta-btn"
         >
           Visit Course
         </Link>
