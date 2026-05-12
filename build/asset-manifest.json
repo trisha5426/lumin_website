@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9ed7778d.css",
+    "main.js": "/static/js/main.34651705.js",
+    "static/media/pankaj.jpeg": "/static/media/pankaj.4d39126c33b8686390bc.jpeg",
+    "static/media/ritesh.JPG": "/static/media/ritesh.f5a184ece74298298bf3.JPG",
+    "static/media/placeholder.png": "/static/media/placeholder.4cbbda85d32907bd006f.png",
+    "static/media/course-card-bg.png": "/static/media/course-card-bg.ed294d58a8c97b2cb948.png",
+    "static/media/newlogin.png": "/static/media/newlogin.e1247808dfa0129918ef.png",
+    "static/media/qrcode.png": "/static/media/qrcode.5cadfd11edfb35db03d7.png",
+    "index.html": "/index.html",
+    "main.9ed7778d.css.map": "/static/css/main.9ed7778d.css.map",
+    "main.34651705.js.map": "/static/js/main.34651705.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9ed7778d.css",
+    "static/js/main.34651705.js"
+  ]
+}
