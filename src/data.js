@@ -31,7 +31,7 @@ const courses = [
         instructor: "Aakanksha Derashree",
         instructorID: "0",
         price: "299.99",
-        img: require("./Assets/Images/course-card-bg.png"),
+        img: require("./Assets/Images/law-of-evidence.jpg"),
         contents: [
           {
             topicName: "GENERAL ISSUES RELATING TO LAW OF EVIDENCE",
@@ -252,7 +252,7 @@ const courses = [
         instructor: "Beauty Gupta and Imama",
         instructorID: "0",
         price: "299.99",
-        img: require("./Assets/Images/course-card-bg.png"),
+        img: require("./Assets/Images/family-law.jpg"),
         contents: [
           { 
             aboutTheAuthor: "Beauty and Imama are from National Law University, Delhi where they have excelled academically at their university. Beauty is part of philanthropic work called IDIA where she helps bring diversity in legal education. Imama is an UN Millenium fellow where her mission is to reduce poverty worldwide.",
@@ -794,7 +794,7 @@ const courses = [
         instructor: "Ada Wallace",
         instructorID: "0",
         price: "299.99",
-        img: require("./Assets/Images/course-card-bg.png"),
+        img: require("./Assets/Images/lawofcrimes.jpg"),
         contents: [
           {
             topicName: "Topic 1",
@@ -867,7 +867,7 @@ const courses = [
         instructorName: "Stuti Rastogi",
         instructorID: "0",
         price: "299.99",
-        img: require("./Assets/Images/course-card-bg.png"),
+        img: require("./Assets/Images/propertylaw.jpg"),
         contents: [
           {
             aboutTheAuthor: "Instructor’s Bio- She has completed her LLB from Campus Law Centre, Delhi University and LLM from Faculty of Law, Delhi University. She has the teaching experience of more than one year in the field of law.",
@@ -1146,7 +1146,7 @@ const courses = [
         instructor: "Ada Wallace",
         instructorID: "0",
         price: "299.99",
-        img: require("./Assets/Images/course-card-bg.png"),
+        img: require("./Assets/Images/publicintlaw.jpg"),
         contents: [
           {
             topicName: "Topic 1",
@@ -1225,7 +1225,7 @@ const courses = [
         instructor: "Avlin Singh",
         instructorID: "0",
         price: "299.99",
-        img: require("./Assets/Images/course-card-bg.png"),
+        img: require("./Assets/Images/constitutionallaw.jpg"),
         contents: [
           {
             aboutTheAuthor: "I'm Avlin Singh. I've been serving as an Assistant Professor at Chandigarh University for the past two years, nurturing young minds while pursuing my Ph.D. in IPR from Rajiv Gandhi National University of Law, Patiala. My legal journey began at Khalsa College of Law, Amritsar, where I graduated in 2018 under Guru Nanak Dev University's guidance. Continuing my academic pursuit, I completed my LL.M. from the same university in 2021. My academic focus lies in criminal, and constitutional law, areas that I find particularly intriguing and enriching. Beyond the academic realm, I find joy in the arts—drawing, dancing, and losing myself in the melodies of music. My diverse interests shape my multifaceted personality, blending intellect with creativity. ",
@@ -1572,7 +1572,7 @@ const courses = [
         instructor: "Ada Wallace",
         instructorID: "0",
         price: "299.99",
-        img: require("./Assets/Images/course-card-bg.png"),
+        img: require("./Assets/Images/administrativelaw.jpg"),
         contents: [
           {
             topicName: "Topic 1",
@@ -1645,7 +1645,7 @@ const courses = [
         instructor: "Ada Wallace",
         instructorID: "0",
         price: "299.99",
-        img: require("./Assets/Images/course-card-bg.png"),
+        img: require("./Assets/Images/labourlaw.jpg"),
         contents: [
           {
             topicName: "Topic 1",
@@ -1718,7 +1718,7 @@ const courses = [
         instructor: "Ada Wallace",
         instructorID: "0",
         price: "299.99",
-        img: require("./Assets/Images/course-card-bg.png"),
+        img: require("./Assets/Images/womenrights.jpg"),
         contents: [
           {
             topicName: "Topic 1",
@@ -1791,7 +1791,7 @@ const courses = [
         instructor: "Ada Wallace",
         instructorID: "0",
         price: "299.99",
-        img: require("./Assets/Images/course-card-bg.png"),
+        img: require("./Assets/Images/competitionlaw.jpg"),
         contents: [
           {
             topicName: "Topic 1",
@@ -1864,7 +1864,7 @@ const courses = [
         instructor: "Ada Wallace",
         instructorID: "0",
         price: "299.99",
-        img: require("./Assets/Images/course-card-bg.png"),
+        img: require("./Assets/Images/intellectual.jpg"),
         contents: [
           {
             topicName: "Topic 1",
@@ -1944,7 +1944,7 @@ const courses = [
         instructor: "Garima Garg",
         instructorID: "0",
         price: "299.99",
-        img: require("./Assets/Images/course-card-bg.png"),
+        img: require("./Assets/Images/advocacy.jpg"),
         contents: [
           {
             aboutTheAuthor: "Hello, future legal legends! I'm Garima , your enthusiastic guide through the wild world of law, where the gavel meets the giggles. With a passion for justice and a knack for making the mundane magnificent, I promise to make our legal journey as entertaining as it is educational.Let's kick things off with my background. I earned my LLB Honors from the GGSIPU. I then polished my legal prowess with an LLM in Constitutional Law where I scored an impressive 80%—because why not aim for an A+ in awesomeness? My research and conference presentations have been so riveting, they've even won best paper awards. Who knew the law could be so award-winningly fun?My career is as diverse as a legal textbook. I've been a Junior Legal Associate, an NGO Coordinator, and recently, your favorite constitutional law educator at Unacademy. From juggling legal briefs to leading online classes, I bring a mix of real-world experience and a love for turning legalese into plain, hilarious English.In my classes, prepare for a rollercoaster ride through the legal landscape. Expect rigorous academic content delivered with a side of humor, real-world case studies spiced with sarcasm, and interactive discussions that make even the driest statutes sparkle. We'll dissect cases with surgical precision and laugh at the quirks of the legal system. Who says law can't be fun?When I'm not turning law into a comedy show, you'll find me strumming the sitar, crafting quirky art, or traveling to places where I can gather more material for my next legal pun. My passion for social justice and education keeps me motivated to inspire you to think critically, argue convincingly, and laugh heartily.Join me in this legal extravaganza where we'll make learning law an adventure filled with laughter, insight, and maybe a few courtroom puns. Let's decode the complexities of law with a smile and prove that justice doesn't have to be boring. Get ready for a law-some time!",
@@ -2319,7 +2319,7 @@ const courses = [
         instructor: "Sonali Gambhir",
         instructorID: "0",
         price: "299.99",
-        img: require("./Assets/Images/course-card-bg.png"),
+        img: require("./Assets/Images/Alternative-Dispute-Resolution.jpg"),
         contents: [
           {
             aboutTheAuthor: "Hello students! I am Sonali and with over 3 years of Post-Qualification Experience (PQE) in Litigation and Dispute Resolution, I excel in both collaborative efforts and handling independent clients. I have completed my LLB from Faculty of law, University of Delhi. Afterwards I have done post graduate diploma in ADR from Indian Law Institute (ILI), New Delhi.I am a seasoned Advocate practicing in the courts of Delhi, with extensive experience appearing before the Hon'ble Supreme Court of India, Delhi High Court, Quasi-Judicial Authorities, and District Courts of Delhi.My strong academic background and profound expertise in procedural laws complement my practical experience. I am passionate about teaching and I hope that you will enjoy my lectures.I can be reached at sonali.gambhir96@gmail.com. Thank you! ",
@@ -2414,7 +2414,7 @@ const courses = [
         instructor: "Sameera Fatima",
         instructorID: "0",
         price: "299.99",
-        img: require("./Assets/Images/course-card-bg.png"),
+        img: require("./Assets/Images/environmental_law.jpg"),
         contents: [
           {
             aboutTheAuthor: "Sameera Fatima is an accomplished academic with a foundation in law, holding a BBA LLB and an LLM. Currently, She is pursuing a Ph.D. at the National University of Study and Research in Law (NUSRL), Jharkhand.She is an Assistant Professor in Law, with a rich experience in the realm of academics, research and paper publications.",
@@ -2732,7 +2732,7 @@ const courses = [
         instructor: "Shaweta Gupta",
         instructorID: "0",
         price: "299.99",
-        img: require("./Assets/Images/course-card-bg.png"),
+        img: require("./Assets/Images/property.jpg"),
         contents: [
           {
             aboutTheAuthor: "I am a qualified company secretary and semi qualified Chartered Accountant and having a great knowledge in the field of commerce all subjects like:- economics, accountancy, cost accounting, management accounting, business law, corporate law, labour law, taxation and all other subjects too. As I am in the education line from the past 9 years and work as an Online educator on different learning programs.",
@@ -3113,7 +3113,7 @@ const courses = [
         instructor: "Ada Wallace",
         instructorID: "0",
         price: "299.99",
-        img: require("./Assets/Images/course-card-bg.png"),
+        img: require("./Assets/Images/banking.jpg"),
         contents: [
           {
             topicName: "Topic 1",

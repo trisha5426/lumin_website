@@ -483,7 +483,7 @@
   display: flex;
   align-items: stretch;
   justify-content: center;
-  gap: 2rem;
+  gap: 4rem;
   flex-wrap: wrap;
 }
 
@@ -1047,7 +1047,7 @@ input[type="text"]:focus {
   outline: 1px solid rgb(202, 86, 244);
 }
 
-button {
+/* button {
   padding: 10px;
   margin-top: 20px;
   border: none;
@@ -1057,6 +1057,9 @@ button {
   cursor: pointer;
   width: 16vh;
   height: 7vh;
+} */
+ button {
+  cursor: pointer;
 }
 
 button:hover {
@@ -2299,22 +2302,37 @@ font-weight:600;
   font-family: 'Inter', sans-serif;
 }
 
-.footer-top {
+/* .footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+} */
+ .footer-top {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
 
-.logo-footer {
-  font-size: 42px;
-  font-weight: 600;
-  color: #2e7d5b;
-  font-family: 'Instrument Serif', serif;
+
+ .logo-footer {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--orig-green);
+  text-decoration: none;
 }
 
 /* CENTER CONTENT */
-.middle-col {
+/* .middle-col {
   text-align: center;
+} */
+ .middle-col {
+  text-align: right;
+  margin-left: auto;
+}
+
+.smcontainer {
+  justify-content: flex-end;
 }
 
 .footer-text {
@@ -2750,7 +2768,7 @@ font-weight:600;
   margin-bottom: 20px;
 }
 
-.buy-btn{
+/* .buy-btn{
   width: 100%;
   padding: 14px;
   border: none;
@@ -2764,7 +2782,7 @@ font-weight:600;
 
 .buy-btn:hover{
   background: #1f5c3a;
-}
+} */
 //-----------------------------------------------------
 .course-page-container {
   padding-top: 100px;
@@ -2963,4 +2981,196 @@ font-weight:600;
   min-height: 70vh;
   padding: 120px 40px;
   text-align: center;
+}
+
+//----------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------
+/* ── Payment Modal ── */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.modal-box {
+  background: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+  max-width: 760px;
+  width: 90%;
+  position: relative;
+  margin: auto;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: #555;
+}
+
+.modal-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.modal-qr {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+}
+
+.modal-or {
+  font-weight: bold;
+}
+
+.modal-upi {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.modal-instructions {
+  color: red;
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.modal-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.modal-course-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  color: #2d6a4f;
+  font-size: 1rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.4rem;
+}
+
+.modal-course-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+}
+
+.modal-course-price {
+  font-weight: 600;
+  color: #2d6a4f;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.modal-form input {
+  border: none;
+  border-bottom: 1px solid #aaa;
+  padding: 0.4rem 0;
+  outline: none;
+  font-size: 0.9rem;
+  width: 100%;
+}
+
+.modal-form input:disabled {
+  color: #333;
+  background: transparent;
+}
+
+.modal-error  { color: red;   font-size: 0.85rem; }
+.modal-success { color: green; font-size: 0.85rem; }
+//--------------------------------------------------------------
+/* ── Price card redesign ── */
+.price-card-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  object-fit: cover;
+  height: 160px;
+}
+
+.price-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.price-new {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.price-old {
+  font-size: 1rem;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.price-discount {
+  font-size: 1rem;
+  color: #1a1a1a;
+  font-weight: 500;
+}
+
+.price-exclusive {
+  color: red;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.subtopic-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 20px;
+  border-top: 1px solid #ddd;
+}
+
+.subtopic-name {
+  flex: 1;
+  padding-right: 1rem;
+}
+
+.video-link-btn {
+  background: #2d7a4f;
+  color: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+
+.video-link-btn:hover {
+  background: #1f5c3a;
+  color: white;
 }
